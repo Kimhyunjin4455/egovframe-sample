@@ -11,5 +11,15 @@
 - Log4j
 - Maven (pom.xml)
 
+## 💡 주요 기능
+
+- `real`/`staging`/`develop`/`local` 로 환경 분리
+- 환경별 로깅 셋팅 
+- 할 일(ToDo) 등록, 조회, 수정, 삭제 API 구현
+
 ## :floppy_disk: ERD
 ![image](https://github.com/user-attachments/assets/08b71dc3-0193-4f8e-83f8-a95405c6feb8)
+
+## :wrench: 셋팅 방법
+1. repository를 fork합니다.
+2. fork한 repository를 local에 clone하고 작업합니다.
