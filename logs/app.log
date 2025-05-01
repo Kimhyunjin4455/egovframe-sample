@@ -1,0 +1,77 @@
+2025-05-01 16:53:53 [main] INFO  com.example.egovframesample.EgovframeSampleApplicationTests - Starting EgovframeSampleApplicationTests using Java 11.0.21 on hjgreenblue with PID 2924 (started by dp124 in D:\eGovTest)
+2025-05-01 16:53:53 [main] INFO  com.example.egovframesample.EgovframeSampleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 16:53:54 [main] INFO  com.example.egovframesample.EgovframeSampleApplicationTests - Started EgovframeSampleApplicationTests in 1.136 seconds (JVM running for 1.93)
+2025-05-01 16:54:08 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Starting EgovframeSampleApplication using Java 11.0.21 on hjgreenblue with PID 22336 (D:\eGovTest\target\classes started by dp124 in D:\eGovTest)
+2025-05-01 16:54:08 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 16:54:08 [main] WARN  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.boot.web.context.MissingWebServerFactoryBeanException: No qualifying bean of type 'org.springframework.boot.web.servlet.server.ServletWebServerFactory' available: Unable to start AnnotationConfigServletWebServerApplicationContext due to missing ServletWebServerFactory bean
+2025-05-01 16:54:08 [main] INFO  org.springframework.boot.autoconfigure.logging.ConditionEvaluationReportLoggingListener - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2025-05-01 16:54:08 [main] ERROR org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web application could not be started as there was no org.springframework.boot.web.servlet.server.ServletWebServerFactory bean defined in the context.
+
+Action:
+
+Check your application's dependencies for a supported servlet web server.
+Check the configured web application type.
+
+2025-05-01 16:56:16 [main] INFO  com.example.egovframesample.EgovframeSampleApplicationTests - Starting EgovframeSampleApplicationTests using Java 11.0.21 on hjgreenblue with PID 20472 (started by dp124 in D:\eGovTest)
+2025-05-01 16:56:16 [main] INFO  com.example.egovframesample.EgovframeSampleApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 16:56:17 [main] INFO  com.example.egovframesample.EgovframeSampleApplicationTests - Started EgovframeSampleApplicationTests in 1.263 seconds (JVM running for 2.067)
+2025-05-01 16:57:38 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Starting EgovframeSampleApplication using Java 11.0.21 on hjgreenblue with PID 2392 (D:\eGovTest\target\classes started by dp124 in D:\eGovTest)
+2025-05-01 16:57:38 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 16:57:39 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-01 16:57:39 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 16:57:39 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 16:57:39 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-01 16:57:39 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 16:57:39 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 847 ms
+2025-05-01 16:57:40 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 16:57:40 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-01 16:57:40 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Started EgovframeSampleApplication in 1.45 seconds (JVM running for 1.985)
+2025-05-01 17:20:06 [http-nio-8080-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 17:20:06 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-01 17:20:06 [http-nio-8080-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-01 17:45:50 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Starting EgovframeSampleApplication using Java 11.0.21 on hjgreenblue with PID 8900 (D:\eGovTest\target\classes started by dp124 in D:\eGovTest)
+2025-05-01 17:45:50 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 17:45:50 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-01 17:45:50 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 17:45:50 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 17:45:50 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-01 17:45:51 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 17:45:51 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 956 ms
+2025-05-01 17:45:51 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 17:45:51 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-01 17:45:51 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Started EgovframeSampleApplication in 1.64 seconds (JVM running for 2.22)
+2025-05-01 18:21:46 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Starting EgovframeSampleApplication using Java 11.0.21 on hjgreenblue with PID 11388 (D:\eGovTest\target\classes started by dp124 in D:\eGovTest)
+2025-05-01 18:21:46 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 18:21:46 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-01 18:21:46 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 18:21:46 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 18:21:46 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-01 18:21:46 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 18:21:46 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 863 ms
+2025-05-01 18:21:47 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 18:21:47 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-01 18:21:47 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Started EgovframeSampleApplication in 1.542 seconds (JVM running for 2.136)
+2025-05-01 18:44:15 [http-nio-8080-exec-3] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-05-01 18:44:15 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-05-01 18:44:15 [http-nio-8080-exec-3] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 2 ms
+2025-05-01 18:57:53 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Starting EgovframeSampleApplication using Java 11.0.21 on hjgreenblue with PID 5384 (D:\eGovTest\target\classes started by dp124 in D:\eGovTest)
+2025-05-01 18:57:53 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - No active profile set, falling back to 1 default profile: "default"
+2025-05-01 18:57:54 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 8080 (http)
+2025-05-01 18:57:54 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-05-01 18:57:54 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-05-01 18:57:54 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.63]
+2025-05-01 18:57:54 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-05-01 18:57:54 [main] INFO  org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 787 ms
+2025-05-01 18:57:54 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-05-01 18:57:54 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 8080 (http) with context path ''
+2025-05-01 18:57:54 [main] INFO  com.example.egovframesample.EgovframeSampleApplication - Started EgovframeSampleApplication in 1.438 seconds (JVM running for 2.015)
