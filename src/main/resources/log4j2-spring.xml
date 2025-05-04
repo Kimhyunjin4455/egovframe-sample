@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-        <Property name="LOG_PATH">logs</Property>
+<!--        <property name="LOG_ENV" value="${env:SPRING_PROFILES_ACTIVE}" />-->
+        <property name="LOG_PATH" value="D:/eGovTest/logs/local" />
     </Properties>
 
     <Appenders>
+        <!-- 콘솔 출력 설정 -->
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n" />
         </Console>
-        <File name="FileAppender" fileName="${LOG_PATH}/app.log">
+
+        <!-- 파일 출력 설정 -->
+        <File name="FileAppender" fileName="${LOG_PATH}/app.log" append="true">
             <PatternLayout pattern="%d{yyyy-MM-dd HH:mm:ss} [%t] %-5level %logger{36} - %msg%n"/>
         </File>
     </Appenders>
-
+./
     <Loggers>
         <!-- eGovFrame 패키지 로깅 레벨 지정 -->
         <Logger name="org.egovframe" level="DEBUG" additivity="false">

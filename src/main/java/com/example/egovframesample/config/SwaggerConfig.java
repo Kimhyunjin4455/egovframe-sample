@@ -14,7 +14,7 @@ public class SwaggerConfig {
     @Bean
     public OpenAPI customOpenAPI() {
         return new OpenAPI()
-                .addServersItem(new Server().url("/")) // Swagger UI 기본 경로
+                .addServersItem(new Server().url("http://localhost:8080")) // Swagger UI 기본 경로
                 .components(new Components()
                         .addSecuritySchemes("bearerAuth",
                                 new SecurityScheme()

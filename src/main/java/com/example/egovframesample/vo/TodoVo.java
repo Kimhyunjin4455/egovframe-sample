@@ -15,6 +15,6 @@ public class TodoVo {
     private Long id;
     private String title;
     private String description;
-    private boolean is_done;
+    private Boolean is_done;
     private LocalDateTime createdAt;
 }
