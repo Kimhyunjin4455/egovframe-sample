@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <Properties>
-<!--        <property name="LOG_ENV" value="${env:SPRING_PROFILES_ACTIVE}" />-->
-        <property name="LOG_PATH" value="D:/eGovTest/logs/local" />
+        <Property name="LOG_ENV" value="${sys:SPRING_PROFILES_ACTIVE}" />
+        <Property name="LOG_PATH" value="D:/eGovTest/logs/${LOG_ENV}" />
     </Properties>
 
     <Appenders>
