@@ -10,8 +10,42 @@
         ORDER BY created_at DESC
     </select>
 
-    <insert id="insert" parameterType="com.example.egovframesample.vo.TodoVo" useGeneratedKeys="true" keyProperty="id">
+    <select id="findById" resultType="com.example.egovframesample.vo.TodoVo">
+        SELECT id, title, description, is_done, created_at
+        FROM todo
+        WHERE id = #{id}
+    </select>
+
+    <insert id="saveTodo" parameterType="com.example.egovframesample.vo.TodoVo" useGeneratedKeys="true" keyProperty="id">
         INSERT INTO todo (title, description, is_done)
         VALUES (#{title}, #{description}, #{is_done})
     </insert>
+
+    <update id="updateToDoById" parameterType="com.example.egovframesample.vo.TodoVo">
+        UPDATE todo
+        SET title = #{title},
+            description = #{description},
+            is_done = true
+        WHERE id = #{id}
+    </update>
+
+<!--    <update id="updateTitleById" parameterType="com.example.egovframesample.vo.TodoVo">-->
+<!--        UPDATE todo-->
+<!--        SET title = #{title},-->
+<!--        is_done = true-->
+<!--        WHERE id = #{id}-->
+<!--    </update>-->
+
+<!--    <update id="updateDescriptionById" parameterType="com.example.egovframesample.vo.TodoVo">-->
+<!--        UPDATE todo-->
+<!--        SET description = #{description},-->
+<!--        is_done = true-->
+<!--        WHERE id = #{id}-->
+<!--    </update>-->
+
+    <delete id="deleteById" parameterType="long">
+        DELETE FROM todo
+        WHERE id = #{id}
+    </delete>
+
 </mapper>

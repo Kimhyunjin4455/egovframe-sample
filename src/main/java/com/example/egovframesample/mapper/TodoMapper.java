@@ -9,5 +9,11 @@ import java.util.List;
 @Mapper
 public interface TodoMapper {
     List<TodoVo> findAll();
-    void insert(TodoVo todoVo);
+    TodoVo findById(Long id);
+    void saveTodo(TodoVo todoVo);
+    void updateToDoById(Long id, String title, String description);
+//    void updateTitleById(Long id);
+//    void updateDescriptionById(Long id);
+    int deleteById(Long id);
+
 }
