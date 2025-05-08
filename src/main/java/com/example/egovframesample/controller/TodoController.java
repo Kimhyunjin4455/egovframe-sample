@@ -53,7 +53,7 @@ public class TodoController {
     @PutMapping("/update-content")
     @Operation(summary = "todo content update api", description = "투두 항목 수정")
     public void modifyToDo(@RequestParam Long id,
-                           @RequestParam String title,
+                           @RequestParam(required = false) String title, // title은 not null 컬럼 But 부분 업데이트 위해 false 설정
                            @RequestParam(required = false) String description){
         todoService.modifyToDo(id, title, description);
         log.info("Todo modifyed successfully " + title +": "+description);

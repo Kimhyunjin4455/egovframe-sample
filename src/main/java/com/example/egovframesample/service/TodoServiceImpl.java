@@ -27,7 +27,7 @@ public class TodoServiceImpl extends EgovAbstractServiceImpl implements TodoServ
     public TodoVo getTodo(Long id) {
         TodoVo todo = todoMapper.findById(id);
         if (todo == null) {
-            throw new IllegalArgumentException("해당 ID의 Todo 항목이 존재하지 않습니다. id = " + id);
+            throw new IllegalArgumentException("해당 Todo 항목이 존재하지 않습니다. id = " + id);
         }
         return todo;
     }
@@ -41,7 +41,7 @@ public class TodoServiceImpl extends EgovAbstractServiceImpl implements TodoServ
     public void modifyToDo(Long id, String title, String description) {
         TodoVo existing = todoMapper.findById(id);
         if (existing == null) {
-            throw new RuntimeException("해당 ID의 투두가 존재하지 않습니다.");
+            throw new RuntimeException("Todo 항목이 존재하지 않습니다.");
         }
 
         // 빈 값이 아닌 경우에만 덮어쓰기
@@ -51,7 +51,7 @@ public class TodoServiceImpl extends EgovAbstractServiceImpl implements TodoServ
         if (description != null && !description.isBlank()) {
             existing.setDescription(description);
         }
-        todoMapper.updateToDoById(id, title, existing.getDescription());
+        todoMapper.updateToDoById(id, existing.getTitle(), existing.getDescription());
     }
 
     @Override
@@ -61,7 +61,8 @@ public class TodoServiceImpl extends EgovAbstractServiceImpl implements TodoServ
 //            log.error("입력값이 올바르지 않습니다.");
             throw new IllegalArgumentException("입력값이 올바르지 않습니다.");
         }else {
-            log.info("삭제 성공: id = " + id);
+            log.info("삭제 성공: info = " + id);
+            // Q. 코드는 github에 공개될 것, 이러면 퀴리 인젝션 방지 위해 id라는 표현을 info로 처리하는것이 의미 있나?
             // Q. real 프로파일 시 error도 봐야하지만 유저의 플로우도 봐야 하지 않나..?
             // 유저의 행동과 관련된 부분의 로그레벨은 의문
         }
