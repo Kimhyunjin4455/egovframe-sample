@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>OpenLayers Test</title>
+    <style>
+        html, body {
+          margin: 0; padding: 0; height: 100%; width: 100%;
+          display: flex;
+          flex-direction: row;
+          font-family: Arial, sans-serif;
+        }
+
+        .ol-custom-topright {
+          right: 2em;
+          top: 2.5em;
+          left: auto; /* 기본값 제거 */
+          position: absolute;
+        }
+
+        /* 줌 버튼 style */
+        .ol-custom-topright button {
+          background-color: #7491b8; /* 하늘색 ~ 파란색 사이 */
+          color: white;              /* +, – 기호 흰색 */
+          border: none;
+          padding: 10px 10px;
+          font-size: 1.2em;
+          font-weight: bold;
+          line-height: 1;
+          text-align: center;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          border-radius: 8px;
+          margin: 4px;
+          cursor: pointer;
+          transition: background-color 0.2s ease;
+        }
+
+        .ol-custom-topright button:hover {
+          background-color: #4a69a9; /* 더 진한 파랑 */
+        }
+
+        #left-panel {
+          width: 15vw;
+          height: 100vh;
+          padding: 10px;
+          box-sizing: border-box;
+          background-color: #f0f0f0;
+          font-family: Arial, sans-serif;
+        }
+
+        #map {
+          flex: 1; /* 좌측 패널 제외한 나머지 영역 차지 */
+          height: 100vh;
+          position: relative;
+        }
+
+        #coords {
+          position: absolute;
+          top: 10px;
+          right: 10px;
+          background: transparent;
+          padding: 6px 12px;
+          font-family: monospace;
+          font-size: 14px;
+          border-radius: 4px;
+          z-index: 1000;
+          box-shadow: none;
+        }
+
+        label[for="scale-unit-select"] {
+          font-weight: bold;
+          font-size: 1.3em;
+        }
+    </style>
+  <script type="module" crossorigin src="/assets/index-oO2hJwK_.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-D3z2Uvum.css">
+</head>
+<body>
+<div id="left-panel">
+    <h2>Layer</h2>
+    <div style="margin-bottom: 20px; display: flex; gap: 10px;">
+        <button id="btn-3857" style="width: 80px;">3857 지도</button>
+        <button id="btn-4326" style="width: 80px;">4326 지도</button>
+    </div>
+
+    <h2>Scale Unit Option</h2>
+    <select id="scale-unit-select">
+        <option value="metric" selected>metric</option>
+        <option value="degrees">degrees</option>
+        <option value="imperial">imperial inch</option>
+        <option value="us">us inch</option>
+        <option value="nautical">nautical mile</option>
+    </select>
+</div>
+<div id="map" class="map"></div>
+<div id="coords">좌표 정보</div>
+</body>
+</html>
